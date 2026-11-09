@@ -10,7 +10,10 @@ export default function Header() {
           to={"/"}
           className="text-3xl font-bold tracking-tight text-orange-500"
         >
-          Garam Thali
+          garam
+          <span className="uppercase">
+            Thal<span className="inline-block lowercase">i</span>
+          </span>
         </Link>
         <div className="md:hidden">
           <MobileNav />
