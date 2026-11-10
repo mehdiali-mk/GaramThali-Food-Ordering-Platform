@@ -1,3 +1,6 @@
+import landingPageImage from "../assets/landing.png";
+import appDownloadImage from "../assets/appDownload.png";
+
 export default function HomePage() {
   return (
     <div className="px-10 flex flex-col gap-12 mt-0 md:mt-32">
@@ -32,6 +35,26 @@ export default function HomePage() {
             d="M0,50 C320,120 420,-20 720,50 C1020,120 1120,-20 1440,50"
           />
         </svg>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-5 mt-6">
+        <img src={landingPageImage} alt="" />
+        <div className="flex flex-col items-center justify-center gap-4 text-center">
+          <span className="font-bold text-3xl tracking-tighter">
+            Order takeaway even faster!
+          </span>
+          <span>
+            Download the garamThali app for faster ordering and personalized
+            recommendations
+          </span>
+          <a href="https://www.linkedin.com/in/mehdiali-mk" target="_blank">
+            <img
+              src={appDownloadImage}
+              alt="Play Store Download Button"
+              className="cursor-pointer"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
